@@ -30,7 +30,7 @@ export class GitlabNotes {
 			.sort((r) => r.project_id)
 			.filter((mr) => mr.draft === false);
 
-		const file = await this.notes.newFile("gitlab-mr-reviews");
+		const file = await this.notes.newFile("Gitlab - Review Requests");
 		await requests.map(async (mr) => this.appendMrNote(file, mr));
 	}
 
@@ -39,7 +39,7 @@ export class GitlabNotes {
 			(r) => r.project_id
 		);
 
-		const file = await this.notes.newFile("gitlab-mr-yours");
+		const file = await this.notes.newFile("Gitlab - Merge Requests");
 		await requests.map(async (mr) => this.appendMrNote(file, mr));
 	}
 }

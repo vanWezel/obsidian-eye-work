@@ -30,7 +30,7 @@ export class Gitlab {
 		return new Promise<MergeRequest[]>((resolve) => {
 			console.log(`fetching review requests for ${this.username}`);
 			return this.fetch<MergeRequest[]>(
-				`/merge_requests?reviewer_username=${this.username}`
+				`/merge_requests?reviewer_username=${this.username}&scope=all&state=opened`
 			).then((r) => resolve(r.data));
 		});
 	}
