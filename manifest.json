@@ -1,0 +1,11 @@
+{
+	"id": "eye-work",
+	"name": "Eye Work Plugin",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Loads data from work tools.",
+	"author": "vanWezel",
+	"authorUrl": "https://eye.security/",
+	"fundingUrl": "https://eye.security/",
+	"isDesktopOnly": false
+}
